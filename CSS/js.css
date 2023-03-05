@@ -1,0 +1,143 @@
+.topnav {
+  overflow: hidden;
+  background-color: rgba(28, 37, 65, 1);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #8ACEDA;
+  color: black;
+}
+
+body {
+  background-color: rgba(28, 37, 65, 1);
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper>* {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+  background-color: rgba(28, 37, 65, 1);
+}
+
+.header {
+  background: #8ACEDA;
+  height: 120px;
+}
+
+.footer {
+  background: #8ACEDA;
+  height: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main {
+  text-align: left;
+  background: #8ACEDA;
+  height: 300px;
+  font-size: 24px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.aside1 {
+  background: #8ACEDA;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.aside2 {
+  background: #8ACEDA;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.aside3 {
+  background: #8ACEDA;
+  
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.todoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+
+  font-weight: bold;
+  flex-wrap: wrap;
+  width: 325px;
+
+}
+
+.sel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+.gid {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3;
+  }
+
+  .aside1 {
+    order: 1;
+  }
+
+  .aside2 {
+    order: 3;
+  }
+
+  .sel {
+    order: 3;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+}

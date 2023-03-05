@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmer oppgåver</title>
+    <link rel="stylesheet" href="../CSS/js.css"> <!--Kobling til .css filen min-->
+</head>
+
+<body onload="startTime()"> <!--til nedtellingen min veit kva dato og klokkeslett det er når du kjem inn på sida-->
+    <script src="nedtelling.js"></script>
+    <div class="topnav">
+        <a href="https://www.amalieskram.vgs.no/"target="blank"class="button">Amalie Skram Vgs</a> <!--KObling til heime sida til amalie skram-->
+        <a href="../index.html"class="button">Heim</a> <!--KObling min heimesida-->
+        <a href="../HTML/ommeg.html"class="button">Om Meg</a> <!--Kobling til Om meg sida mi-->
+        <a href="../HTML/Mineprosjekt.html" class="button">  Mine prosjekt </a> <!--kobling til mine prosjekt-->
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Algoritme oppgåver</h1> <!--tittel på sida-->
+        </header>
+        
+        <div class="gid">
+            <div class="main">
+                <!--Array-->
+                <script src="Array.js"></script> <!--KObling til Array oppg.-->
+
+            </div>
+            <div class="aside aside1">
+                <!--if else løkker, funksjon -->
+                <h4>Kor lenge har du sovet i natt? <br> (0-8 timer):</h4>
+                <input type="text" id="gjett">
+                <button id="submit">Submit</button>
+                <p id="result"></p>
+                <script src="Gjett.js"></script>
+            <img src="../Bilder/Flytdiagram.jpg" alt="Flytdiagram">
+            </div>
+
+            <div class="sel">
+                <aside class="aside aside2">
+                    <!--funksjon, Tilfeldig hilsen-->
+                    <Script src="TilfeldigHilsen.js"></Script>
+                </aside>
+
+                <aside class="aside aside3">
+                    <!--ToDo liste, Localstorage, if else, -->
+                    <div class="myTodo">
+                        <div class="inputvalue">
+                            <h4>To do liste</h4>
+                            <input class="inputVal" type="text" placeholder="Add your task" value="">
+                            <button class="btn">Add Task</button>
+
+                        </div>
+
+
+                        <div class="todoLists">
+
+                        </div>
+                        <button class="clearTask" onclick="clearTask()">Clear all Task</button>
+                    </div>
+            </div>
+            <script src="../JS/ToDoList/main.js"></script>
+            </aside>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <footer class="footer">
+        <!--Nedtelling-->
+        <div id="nedtelling"></div>
+    </footer>
+    </div>
+</body>
+
+</html>
