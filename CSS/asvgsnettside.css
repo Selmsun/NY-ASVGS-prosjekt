@@ -37,7 +37,7 @@ body {
       display: grid;
       grid-template-areas:
         'topnav topnav topnav topnav topnav topnav'
-        'header header header header header knappar'
+        'header header header header header header'
         'menu main main main main main'
         'menu main main main main main';
         gap: 5px;
