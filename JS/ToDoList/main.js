@@ -1,4 +1,4 @@
-//localstorage, if else, ToDo liste
+//localstorage, if else| ToDo liste
 const inputVal = document.getElementsByClassName('inputVal')[0];
 
 const addTaskBtn = document.getElementsByClassName('btn')[0];
@@ -14,7 +14,7 @@ addTaskBtn.addEventListener('click', function () { //når du klikke på addTaskB
       } else {
          taskList = localItems;
       }
-      let found = false //ikkje samme ting to ganger på lista
+      let found = false //ikkje dobbelt opp 
       for (let i = 0; i < taskList.length; i++){
          if (taskList[i]==inputVal.value ) {
             found = true
